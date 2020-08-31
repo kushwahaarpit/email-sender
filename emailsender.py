@@ -1,7 +1,7 @@
 import smtplib
 
 #recipent 
-to = input("Enter the email of receipent:\n")
+to = input("Enter the email of receipient:\n")
 
 #message
 content = input("Enter content of email:\n")
@@ -12,7 +12,7 @@ def sendEmail(to,content):
     server.ehlo()
     server.starttls()
     server.login('senderEmail@gmail.com','1234')
-    server.sendmail('recipentemail@gmail.com',to,content)
+    server.sendmail('recipientemail@gmail.com',to,content)
     server.close()
 
 sendEmail(to,content)    
